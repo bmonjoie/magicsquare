@@ -2,7 +2,7 @@
 
 A small game with a very easy principle: fill the grid from 1 to 100
 
-Play the game [here](http://bmonjoie.github.io/magicsquare/) !
+Play the game [here](https://bmonjoie.github.io/magicsquare/) !
 
 # Screenshot
 
