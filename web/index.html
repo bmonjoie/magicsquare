@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Magic Square</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        body {
+            background: #DDD;
+        }
+
+        #score {
+            padding: 10px;
+            background: #FF8844;
+            border-radius: 5px;
+        }
+
+        #table {
+            background: #888;
+            border-radius: 5px;
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+
+        table {
+            border-collapse: separate;
+            border-spacing: 2px;
+        }
+
+        td {
+            background: #FFF;
+            width: 50px;
+            height: 50px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        td.filled {
+            background: #FA0;
+            border-color: #F40;
+            border-width: 2px;
+        }
+
+        td.last {
+            background: #88F;
+            border-color: #00F;
+            border-width: 2px;
+        }
+
+        td.next {
+            background: #8F8;
+            border-color: #0F0;
+            border-width: 2px;
+        }
+
+        td.cheat {
+            background: #DFD;
+            border-color: #8F8;
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Magic Square</h1>
+    <h3>Fill the grid from 1 to 100</h3>
+    <div id="table" class="col-md-5">
+    <table >
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    </div>
+    <div class="col-md-2">
+        <p id="score">
+            Current score : <b><span id="current_score"></span></b><br/>
+            Best score : <b><span id="best_score"></span></b>
+        </p>
+
+        <div>
+            <p><input type="button" value="Restart" id="restart" class="btn btn-danger"/></p>
+            <div class="checkbox" style="display: none">
+                <label><input type="checkbox" id="cheat"/> Cheat ?</label>
+            </div>
+        </div>
+        <h1>Rules:</h1>
+        <p>Your next move can only be on a cell that is :</p>
+        <ul>
+            <li>Spaced by two cells vertically</li>
+            <li>Spaced by two cells horizontally</li>
+            <li>Spaced by one cell in diagonal</li>
+            <li>Not already filled</li>
+        </ul>
+    </div>
+
+</div>
+<script type="text/javascript" src="lib/kotlin.js"></script>
+<script type="text/javascript" src="lib/magicsquare.js"></script>
+</body>
+</html>
