@@ -40,18 +40,18 @@ class Controller {
         }
         // endregion horizontal
         // region left to right diagonal
-        if (row > 1 && col > 1) {
+        if (row > 0 && col > 1) {
             addIfPositionEmpty(position - 22)
         }
-        if (row < 8 && col < 8) {
+        if (row < 9 && col < 8) {
             addIfPositionEmpty(position + 22)
         }
         // endregion left to right diagonal
         // region right to left diagonal
-        if (row < 8 && col < 8) {
+        if (col < 8 && row > 0) {
             addIfPositionEmpty(position - 18)
         }
-        if (row > 1 && col > 1) {
+        if (col > 1 && row < 9) {
             addIfPositionEmpty(position + 18)
         }
         // endregion right to left diagonal

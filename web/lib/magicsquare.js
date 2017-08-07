@@ -44,16 +44,16 @@ var magicsquare = function (_, Kotlin) {
     if (col < 7) {
       this.addIfPositionEmpty_0($receiver, position + 3 | 0);
     }
-    if (row > 1 && col > 1) {
+    if (row > 0 && col > 1) {
       this.addIfPositionEmpty_0($receiver, position - 22 | 0);
     }
-    if (row < 8 && col < 8) {
+    if (row < 9 && col < 8) {
       this.addIfPositionEmpty_0($receiver, position + 22 | 0);
     }
-    if (row < 8 && col < 8) {
+    if (col < 8 && row > 0) {
       this.addIfPositionEmpty_0($receiver, position - 18 | 0);
     }
-    if (row > 1 && col > 1) {
+    if (col > 1 && row < 9) {
       this.addIfPositionEmpty_0($receiver, position + 18 | 0);
     }
     return $receiver;
