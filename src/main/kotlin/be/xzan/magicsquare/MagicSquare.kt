@@ -44,7 +44,10 @@ class MagicSquare {
                 if (logic.score == 100) {
                     js("alert('You won !')")
                 }
-                best.textContent = logic.score.toString()
+                val previousBest = best.textContent?.toFloatOrNull() ?: 0f
+                if (previousBest < logic.score) {
+                    best.textContent = logic.score.toString()
+                }
             }
         }
     }

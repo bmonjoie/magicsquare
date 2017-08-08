@@ -117,6 +117,7 @@ var magicsquare = function (_, Kotlin) {
     this.cheatToggle_0.addEventListener('click', MagicSquare_init$lambda_2(this), true);
   }
   MagicSquare.prototype.onElementClicked_0 = function (position) {
+    var tmp$, tmp$_0;
     if (this.logic_0.setAsNext_za3lpa$(position)) {
       this.nextCheat_0 = null;
       this.display();
@@ -124,7 +125,10 @@ var magicsquare = function (_, Kotlin) {
         if (this.logic_0.score === 100) {
           alert('You won !');
         }
-        this.best_0.textContent = this.logic_0.score.toString();
+        var previousBest = (tmp$_0 = (tmp$ = this.best_0.textContent) != null ? Kotlin.kotlin.text.toDoubleOrNull_pdl1vz$(tmp$) : null) != null ? tmp$_0 : 0.0;
+        if (previousBest < this.logic_0.score) {
+          this.best_0.textContent = this.logic_0.score.toString();
+        }
       }
     }
   };
