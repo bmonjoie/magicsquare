@@ -1,46 +1,21 @@
-group 'be.xzan'
-version '1.0-SNAPSHOT'
-
 buildscript {
-    ext.kotlin_version = '1.1.3-2'
+  ext.kotlin_version = '1.2.10'
 
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-
-apply plugin: 'kotlin2js'
-
-compileKotlin2Js {
-    kotlinOptions.outputFile = "${projectDir}/out/magicsquare.js"
-    //kotlinOptions.moduleKind = "amd"
-}
-
-repositories {
+  repositories {
+    google()
     mavenCentral()
+    maven { url "https://plugins.gradle.org/m2/" }
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.0.1'
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    classpath 'com.moowork.gradle:gradle-node-plugin:1.2.0'
+  }
 }
 
-dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+allprojects {
+  repositories {
+    google()
+    jcenter()
+  }
 }
-
-
-task('copyKotlinFile', type: Copy) {
-    dependsOn configurations.compile
-    from {
-        configurations.compile
-                .collect { zipTree(it).filter { it.name.equals("kotlin.js") } }
-    }
-    into file("web/lib")
-}
-
-task('copyJS', type: Copy) {
-    dependsOn copyKotlinFile
-    from(file('out/magicsquare.js'))
-    into(file('web/lib'))
-}
-
-assemble.finalizedBy copyJS

@@ -45,7 +45,7 @@ crashlytics-build.properties
 fabric.properties
 ### Gradle template
 .gradle
-/build/
+build/
 out
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -59,3 +59,11 @@ gradle-app.setting
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
 
+# Javascript dependencies
+javascript/node_modules
+
+.idea
+*.iml
+
+local.properties
+captures/

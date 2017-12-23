@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Magic Square</string>
+    <string name="restart">Restart</string>
+    <string name="help">Help</string>
+    <string name="help_message">Fill the grid from 1 to 100\n\n
+Your next move can only be on a cell that is :\n
+- Spaced by two cells vertically\n
+- Spaced by two cells horizontally\n
+- Spaced by one cell in diagonal\n
+- Not already filled</string>
+    <string name="ok">OK</string>
+    <string name="restart_confirm_message">Are you sure you wish to restart the game ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="game_over">Game over</string>
+    <string name="game_over_message">Score : %d</string>
+    <string name="current_score">Current score</string>
+    <string name="best_score">Best score</string>
+    <string name="about">About</string>
+    <string name="libraries_used_title">Libraries used</string>
+    <string name="connect_with_us">Connect with us</string>
+    <string name="about_page_description">A small game with a very easy principle: fill the grid from 1 to 100</string>
+</resources>

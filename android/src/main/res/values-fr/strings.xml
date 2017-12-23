@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Carré Magique</string>
+    <string name="restart">Recommencé</string>
+    <string name="help">Aide</string>
+    <string name="help_message">Remplissez la grille de 1 à 100\n\n
+Votre prochain coup ne peut être que :\n
+- Espacé de 2 cellules verticallement\n
+- Espacé de 2 cellules horizontallement\n
+- Espacé d\'une cellule en diagonal\n
+- Pas déjà utilisée</string>
+    <string name="ok">OK</string>
+    <string name="restart_confirm_message">Êtes vous sûr de vouloir recommencé la partie ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="game_over">Game over</string>
+    <string name="game_over_message">Score : %d</string>
+    <string name="current_score">Score actuel</string>
+    <string name="best_score">Meilleur score</string>
+    <string name="about">À propos</string>
+    <string name="libraries_used_title">Bibliothèques utilisées</string>
+    <string name="connect_with_us">Contactez-nous</string>
+    <string name="about_page_description">Un jeu au principe très simple: remplissez la grille de 1 à 100</string>
+</resources>

@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/magicsquare.iml" filepath="$PROJECT_DIR$/.idea/modules/magicsquare.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/magicsquare_main.iml" filepath="$PROJECT_DIR$/.idea/modules/magicsquare_main.iml" group="magicsquare" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/magicsquare_test.iml" filepath="$PROJECT_DIR$/.idea/modules/magicsquare_test.iml" group="magicsquare" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MagicSquare.iml" filepath="$PROJECT_DIR$/.idea/modules/MagicSquare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/android.iml" filepath="$PROJECT_DIR$/android/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/javascript/javascript.iml" filepath="$PROJECT_DIR$/.idea/modules/javascript/javascript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm-lib/jvm-lib.iml" filepath="$PROJECT_DIR$/jvm-lib/jvm-lib.iml" />
     </modules>
   </component>
 </project>

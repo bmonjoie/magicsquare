@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":javascript" external.linked.project.path="$MODULE_DIR$/../../../javascript" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="MagicSquare" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":javascript" />
+      </configuration>
+    </facet>
+    <facet type="java-gradle" name="Java-Gradle">
+      <configuration>
+        <option name="BUILD_FOLDER_PATH" value="$MODULE_DIR$/../../../javascript/build" />
+        <option name="BUILDABLE" value="true" />
+      </configuration>
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JavaScript " useProjectSettings="false">
+        <implements>common</implements>
+        <compilerSettings>
+          <option name="additionalArguments" value="-Xmulti-platform" />
+        </compilerSettings>
+        <compilerArguments>
+          <option name="outputFile" value="$MODULE_DIR$/../../../javascript/out/magicsquare.js" />
+          <option name="noStdlib" value="true" />
+          <option name="sourceMap" value="true" />
+          <option name="sourceMapEmbedSources" value="inlining" />
+          <option name="metaInfo" value="true" />
+          <option name="target" value="v5" />
+          <option name="moduleKind" value="umd" />
+          <option name="main" value="call" />
+          <option name="languageVersion" value="1.2" />
+          <option name="apiVersion" value="1.2" />
+          <option name="pluginOptions">
+            <array />
+          </option>
+          <option name="pluginClasspaths">
+            <array />
+          </option>
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../../../javascript/build/classes/java/main" />
+    <output-test url="file://$MODULE_DIR$/../../../javascript/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../javascript">
+      <sourceFolder url="file://$MODULE_DIR$/../../../javascript/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../javascript/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../javascript/src/test/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../javascript/src/test/resources" type="java-test-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../javascript/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../javascript/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="common" />
+    <orderEntry type="library" exported="" scope="PROVIDED" name="kotlin-stdlib-js-1.2.10" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="kotlin-test-js-1.2.10" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="kotlin-test-annotations-common-1.2.10" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="kotlin-stdlib-common-1.2.10" level="project" />
+  </component>
+</module>

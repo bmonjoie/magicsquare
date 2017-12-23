@@ -1,0 +1,15 @@
+apply plugin: 'kotlin-platform-js'
+
+compileKotlin2Js {
+    kotlinOptions.outputFile = "${projectDir}/out/magicsquare.js"
+    kotlinOptions.sourceMap = true
+    kotlinOptions.moduleKind = "umd"
+}
+
+dependencies {
+    expectedBy project(':common')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+}
+
+apply from: "test_js.gradle"
+apply from: "copy_js.gradle"

@@ -1,0 +1,16 @@
+task('copyKotlinFile', type: Copy) {
+    dependsOn configurations.compile
+    from {
+        configurations.compile
+                .collect { zipTree(it).filter { it.name.equals("kotlin.js") } }
+    }
+    into file("../web/lib")
+}
+
+task('copyJS', type: Copy) {
+    dependsOn copyKotlinFile
+    from(file('out/magicsquare.js'))
+    into(file('../web/lib'))
+}
+
+assemble.finalizedBy copyJS

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#DDD</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#E91E63</color>
+    <color name="last_cell">@color/colorPrimary</color>
+    <color name="last_cell_border">@color/colorPrimaryDark</color>
+    <color name="filled_cell">#FA0</color>
+    <color name="filled_cell_border">#F40</color>
+    <color name="next_cell">#8F8</color>
+    <color name="next_cell_border">#4A4</color>
+</resources>
