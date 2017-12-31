@@ -20,7 +20,7 @@ class MagicSquareView @JvmOverloads constructor(
 
     init {
         numColumns = 10
-        stretchMode = STRETCH_SPACING
+        stretchMode = STRETCH_COLUMN_WIDTH
     }
 
     var data: Data? = null
