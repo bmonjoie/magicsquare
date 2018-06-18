@@ -63,7 +63,7 @@
   Controller.prototype.getNextForPosition_za3lpa$ = function (position) {
     return this.getNextForPosition_wmnbas$(this.array_0, position);
   };
-  var ArrayList_init = Kotlin.kotlin.collections.ArrayList_init_ww73n8$;
+  var ArrayList_init = Kotlin.kotlin.collections.ArrayList_init_287e2$;
   Controller.prototype.getNextForPosition_wmnbas$ = function (array, position) {
     var $receiver = ArrayList_init();
     var col = position % 10;

@@ -1,2 +1,2 @@
-include ':javascript', ':common', ':android', ':jvm-lib'
+include ':javascript', ':common', ':android'
 

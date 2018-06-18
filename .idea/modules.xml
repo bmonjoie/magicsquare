@@ -6,7 +6,6 @@
       <module fileurl="file://$PROJECT_DIR$/android/android.iml" filepath="$PROJECT_DIR$/android/android.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/javascript/javascript.iml" filepath="$PROJECT_DIR$/.idea/modules/javascript/javascript.iml" />
-      <module fileurl="file://$PROJECT_DIR$/jvm-lib/jvm-lib.iml" filepath="$PROJECT_DIR$/jvm-lib/jvm-lib.iml" />
     </modules>
   </component>
 </project>

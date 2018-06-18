@@ -1,8 +1,0 @@
-apply plugin: 'kotlin-platform-jvm'
-
-dependencies {
-  compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  expectedBy project(':common')
-  testImplementation 'junit:junit:4.12'
-  testImplementation "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
-}
